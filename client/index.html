@@ -2,26 +2,26 @@
 <html>
   <head>
     <style>
-    body {
-      position: relative;
-    }
-    body div {
-      position: fixed;
-      height: 100%;
-      width: 100%;
-      background: url('/assets/IMG_0001.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
-    body div.bottom {
-      opacity: 1;
-      background: url('/assets/IMG_0002.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
-    body div.top {
-      -webkit-animation: anim 11s infinite alternate;
-      animation: anim 11s infinite alternate;
-    }
-    @-webkit-keyframes anim {
+      body {
+        position: relative;
+      }
+      body div {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: url("/assets/IMG_0001.jpg") no-repeat center center fixed;
+        background-size: cover;
+      }
+      body div.bottom {
+        opacity: 1;
+        background: url("/assets/IMG_0002.jpg") no-repeat center center fixed;
+        background-size: cover;
+      }
+      body div.top {
+        -webkit-animation: anim 11s infinite alternate;
+        animation: anim 11s infinite alternate;
+      }
+      @-webkit-keyframes anim {
         0% {
           opacity: 0;
         }
@@ -48,26 +48,12 @@
         100% {
           opacity: 1;
         }
-    }
-
+      }
     </style>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
   </head>
   <body>
     <div class="bottom"></div>
     <div class="top"></div>
-
-
-    <!-- <script>
-
-      var toggle = function(){
-        $('#photo1').animate({"opacity":"toggle"});
-        $('#photo2').animate({"opacity":"toggle"});
-      }
-
-      // setInterval(function(){
-      //   fade();
-      // }, 5000)
-    </script> -->
   </body>
 </html>
